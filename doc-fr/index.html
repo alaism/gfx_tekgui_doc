@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+	<title>Doc - Tekgui</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <link href="../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">Tekgui</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Francais <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li class="active">
+                            <a href="./">Doc</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../fonction-fr/">Fonction</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">English <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../doc-en/">Doc</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../function-en/">Function</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Exemple <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../exemple-ini/">Ini file</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../basic-c-program/">Demo program</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="..">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../fonction-fr/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#utilisation-de-la-librairie-tekgui">Utilisation de la librairie tekgui</a></li>
+        
+            <li><a href="#creation-dun-fichier-ini">Création d'un fichier ini</a></li>
+        
+            <li><a href="#initialisation-du-fichier-ini">Initialisation du fichier ini</a></li>
+        
+            <li><a href="#configuration-des-boutons">Configuration des boutons</a></li>
+        
+            <li><a href="#configuration-des-boites-de-texte">Configuration des boîtes de texte</a></li>
+        
+            <li><a href="#configuration-des-checkbox">Configuration des Checkbox</a></li>
+        
+            <li><a href="#configuration-des-picbox">Configuration des picbox</a></li>
+        
+            <li><a href="#aide">Aide</a></li>
+        
+            <li><a href="#les-fonctions-de-la-librairie">Les fonctions de la librairie</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="utilisation-de-la-librairie-tekgui"><U><font color="#A0522D"><strong>Utilisation de la librairie tekgui</strong></font color="#A0522D"></U></h1>
+<p></br></br>
+Ce guide est fait pour les utilisateurs qui connaissent les bases de la Liblapin, et qui maîtrisent les fonctions :</p>
+<pre><code class="c">bunny_set_key_response();
+bunny_set_loop_main_function();
+bunny_loop();
+</code></pre>
+
+<hr />
+<h2 id="creation-dun-fichier-ini"></br></br><U><font color="#A0522D">Création d'un fichier ini</font color="#A0522D"></U></h2>
+<p></br></br>
+La librairie tekgui se base sur un fichier ini pour créer une interface graphique personalisée.</br>
+Il est donc nécessaire de créer un fichier ini correctement.</br>
+Certaine partie sont obligatoires, d'autre sont personalisables.
+Le fichier ini doit être configuré comme dans l'exemple ci-dessous.</br>
+Dans le cas contraire, les fonctions de la librairie tekgui vont renvoyer une erreur.</br>
+</br></br>
+Exemple :</p>
+<pre><code>[info]
+name=&quot;window&quot;
+height=800
+width=800
+color=200,200,200
+max_ram=15
+</code></pre>
+
+<p></br>
+Le champ <code>[info]</code> est <strong>obligatoire</strong>.</br>
+Le champ <code>window</code> contient le nom de la fenêtre créée par la librairie.</br>
+Les champs <code>height</code> et <code>width</code> contiennent la longueur et la largeur de la fenetre.</br>
+Le champ <code>color</code> contient la couleur de la fenetre.</br>
+Le champ <code>max_ram</code> contient le maximum de ram utilisable par la programme.</br>
+Si l'erreur <font color="RED"><em>Error: error in malloc</em></font color="RED"> apparait, c'est probablement que max_ram est trop petit pour supporter la librairie Tekgui.</br>
+Si window, color, height ou width n'est pas complété ou existant, les fonctions retourneront une erreur.</br></p>
+<hr />
+<h2 id="initialisation-du-fichier-ini"></br></br><U><font color="#A0522D">Initialisation du fichier ini</font color="#A0522D"></U></h2>
+<p></br></br>
+La suite du fichier ini contient les informations principales de la fenêtre.
+</br></br>
+Exemple :</p>
+<pre><code>[window]
+nbr_button=3
+name_button=button1,button2,button3
+nbr_textbox=2
+name_textbox=textbox1,textbox2
+nbr_checkbox=2
+name_checkbox=checkbox1,checkbox2
+nbr_picbox=2
+name_picbox=picbox1,picbox2
+</code></pre>
+
+<p></br>
+Le champ <code>[window]</code> est obligatoire.</br>
+Le champ <code>nbr_button</code> est le nombre de bouton présent dans la fenètre.</br>
+Le champ <code>name_button</code> contient les nom des boutons. Le nombre de nom et <code>nbr_button</code> doivent etre les même.</br>
+Le champ <code>nbr_textbox</code> est le nombre de case de text présent dans la fenêtre.</br>
+Le champ <code>name_textbox</code> contient les noms des cases de text. Le nombre de nom et <code>nbr_textbox doivent</code> etre les même.</br>
+Le champ <code>nbr_checkbox</code> est le nombre de checkbox présent dans la fenêtre.</br>
+Le champ <code>name_checkbox</code> contient les noms des cases de text. Le nombre de nom et <code>nbr_checkbox</code> doivent etre les même.</br>
+Le champ <code>nbr_picbox</code> est le nombre d'image présent dans la fenêtre.</br>
+Le champ <code>name_picbox</code> contient les noms des images. Le nombre de nom et <code>nbr_picbox</code> doivent etre les même.</br>
+<strong>ATTENTION</strong> Tous les champ doivent apparaitre dans le fichier ini.</br>
+Si, par exemple, vous ne voulez pas de checkbox, voici comment faire :</p>
+<pre><code>[window]
+nbr_button=3
+name_button=button1,button2,button3
+nbr_textbox=2
+name_textbox=textbox1,textbox2
+nbr_checkbox=0
+name_checkbox=NULL
+nbr_picbox=2
+name_picbox=picbox1,picbox2
+
+</code></pre>
+
+<hr />
+<h2 id="configuration-des-boutons"></br></br><U><font color="#A0522D">Configuration des boutons</font color="#A0522D"></U></h2>
+<p></br></br>
+Apres avoir été initialisé, chaque bouton doit être defini comme dans l'exemple ci-dessous.
+</br></br>
+Exemple :</p>
+<pre><code class="ini">[button1]
+name=&quot;salut&quot;
+posx=0
+posy=0
+height=100
+width=100
+color=70,70,70
+select_color=150,150,150
+fct_to_call=&quot;button1&quot;
+</code></pre>
+
+<p></br>
+Le champ <code>[button1]</code> contient le nom du bouton que vous voulez definir, entourée de [ ].</br>
+Le champ <code>name</code> contient le nom du bouton dans la fenêtre.</br>
+Les champ <code>posx</code> et <code>posy</code> contiennent la position de départ du bouton.</br>
+Les champ <code>height</code> et <code>wight</code> définissent la taille du bouton.</br>
+Le champ <code>color</code> est la couleur du boutton.</br>
+Le champ <code>select_color</code> est la couleur lorsque le bouton est selectionné.</br>
+Le champ <code>fct_to_call</code> contient le nom de la fonction appeller lorsque le bouton est cliquer.</br>
+Chaque bouton doit avoir sa propre configuration.</br>
+Si il y a deux configurations différentes pour le même bouton, la première configuration trouvé sera activée, la seconde sera ignorée.</p>
+<hr />
+<h2 id="configuration-des-boites-de-texte"></br></br><U><font color="#A0522D">Configuration des boîtes de texte</font color="#A0522D"></U></h2>
+<p></br></br>
+Apres avoir été initialisé, chaque boîte de texte doit être définie comme dans l'exemple ci-dessous.
+</br></br>
+Exemple :</p>
+<pre><code class="ini">[textbox1]
+name=&quot;tekbox1&quot;
+posx=300
+posy=100
+height=100
+width=300
+color=80,80,80
+text=&quot;bonjour&quot;
+</code></pre>
+
+<p></br>
+Le champ <code>[textbox1]</code> contient le nom de la boite que vous voulez definir, entourée de [ ].</br>
+Le champ <code>name</code> contient le nom de la textbox dans la fenêtre.</br>
+Les champ <code>posx</code> et <code>posy</code> contiennent la position de départ de la textbox.</br>
+Les champ <code>height</code> et <code>wight</code> définissent la taille de la boite.</br>
+Le champ <code>color</code> contient la couleur de la textbox.</br>
+Le champ <code>text</code> contient l'écriture initial à l'intérieur de la boite.</br>
+</br>
+Chaque boite de texte doit avoir sa propre définition.</br>
+Si il y a deux configurations différentes pour la même boite, la première configuration trouvé sera activée, la seconde sera ignorée.</br>
+Pour utiliser la boite de texte, il suffit de cliquer dessus.</br>
+Seul les caractères alphabétiques, les espaces et la touche retour arrière peuvent être utilisé dans ses boîtes</br>
+Les autres carractères n'auront uncun effet.</br>
+</br></p>
+<hr />
+<h2 id="configuration-des-checkbox"></br></br><U><font color="#A0522D">Configuration des Checkbox</font color="#A0522D"></U></h2>
+<p></br></br>
+Apres avoir été initialisé, chaque checkbox doit être définie comme dans l'exemple ci-dessous.
+</br></br>
+Exemple :</p>
+<pre><code class="ini">[checkbox1]
+name=&quot;checkbox1&quot;
+posx=700
+posy=70
+height=50
+width=50
+fct_to_call_check=&quot;check&quot;
+fct_to_call_not_check=&quot;not_check&quot;
+
+</code></pre>
+
+<p></br>
+Le champ <code>[textbox1]</code> contient le nom de la checkbox que vous voulez définir, entourée de [ ].</br>
+Le champ <code>name</code> contient le nom de la checkbox dans la fenêtre.</br>
+Les champ <code>posx</code> et <code>posy</code> contiennent la position de départ de la checkbox.</br>
+Les champ <code>height</code> et <code>wight</code> définissent la taille de la checkbox.</br>
+Le champ <code>fct_to_call_check</code> contient le nom de la fonction à appller lorsque la case est cochée</br>
+le chemp <code>fct_to_call_not_check</code> contient le nom de la fonction à appeller lorque la case n'est pas cochée</br>
+</br>
+Chaque checkbox doit avoir sa propre définition.</br>
+Si il y a deux configurations différentes pour la même checkbox, la première configuration trouvé sera activée, la seconde sera ignorée.</br>
+Il suffit de cliquer sur la checkbox pour changer sont etat.</br>
+</br></p>
+<hr />
+<h2 id="configuration-des-picbox"></br></br><U><font color="#A0522D">Configuration des picbox</font color="#A0522D"></U></h2>
+<p></br></br>
+Apres avoir été initialisé, chaque picbox doit être defini comme dans l'exemple ci-dessous.</br>
+Le picbox veut dire Picture box, ou "boite d'image"
+</br></br>
+Exemple :</p>
+<pre><code class="ini">[picbox1]
+name=&quot;emoji6.png&quot;
+posx=100
+posy=250
+</code></pre>
+
+<p></br>
+Le champ <code>[picbox1]</code> contient le nom de la picbox que vous voulez definir, entourer de [ ].</br>
+Le champ <code>name</code> contient le lien de l'image a charger.</br>
+Les champ <code>posx</code> et <code>posy</code> contiennent la position de départ de la checkbox.</br>
+</br>
+Chaque picbox doit avoir sa propre definition.</br>
+Si il y a deux configurations différentes pour la meme picbox, la première configuration trouvé sera activée, la seconde sera ignorée.</br>
+L'image sera affiché à partir des coordonnées donné, jusqu'a sa fin.</br>
+Si la fin de l'image se trouve après la fin de la fenètre, une erreur apparaitra dans la terminal.</br>
+<code>name</code> doit contenir un lien direct ou le chemin d'accés à votre image à partir de la racine de la librairie.</br>
+Si l'image donnée n'existe pas ou que le lien est mal entée, la fonction retournera une erreur.</br>
+</br></p>
+<hr />
+<h2 id="aide"></br></br><U><font color="#A0522D">Aide</font color="#A0522D"></U></h2>
+<p>Pour tester ses fonctions, vous pouver vous servir du fichier ini donner <a href="../exemple-ini/"><U><font color="#AFEEEE">ici</font color="#AFEEEE"></U></a></br>
+Pour tester la librairie avec le fichier ini, il vous faudra un programme.</br>
+Un code basique vous est donné <a href="../basic-c-program/"><U><font color="#AFEEEE">ici</font color="#AFEEEE"></U></a></br></br></br></p>
+<hr />
+<h2 id="les-fonctions-de-la-librairie"><U><font color="#A0522D">Les fonctions de la librairie</font color="#A0522D"></U></h2>
+<p>Toutes les fonctions présente dans la librairie  sont dans l'onglet  <a href="../fonction-fr"><font color="#AFEEEE">fonction</font color="#AFEEEE"></a></p>
+<p>Si vous chercher une fonction spécifique, vous pourver cliquer qur les lien suivant:<br />
+</br>
+</br>
+1. <a href="../fonction-fr/#tekgui_load"><U><font color="#AFEEEE">tekgui_load</font color="#AFEEEE"></U></a></br>
+2. <a href="../fonction-fr/#tekgui_display"><U><font color="#AFEEEE">tekgui_display</font color="#AFEEEE"></U></a></br>
+3. <a href="../fonction-fr/#display_window"><U><font color="#AFEEEE">display_window</font color="#AFEEEE"></U></a></br>
+4. <a href="../fonction-fr/#tekpixel"><U><font color="#AFEEEE">tekpixel</font color="#AFEEEE"></U></a></br>
+5. <a href="../fonction-fr/#tekfunction"><U><font color="#AFEEEE">tekfunction</font color="#AFEEEE"></u></a></br>
+6. <a href="../fonction-fr/#tektext"><U><font color="#AFEEEE">tektext</font color="#AFEEEE"></U></a></br>
+7. <a href="../fonction-fr/#tekgetpixel"><U><font color="#AFEEEE">tekgetpixel</font color="#AFEEEE"></U></a></br>
+8. <a href="../fonction-fr/#tekgui_stop"><U><font color="#AFEEEE">tekgui_stop</font color="#AFEEEE"></U></a></br>
+9. <a href="../fonction-fr/#tekgui_max_ram"><U><font color="#AFEEEE">tekgui_max_ram</font color="#AFEEEE"></U></a></br></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

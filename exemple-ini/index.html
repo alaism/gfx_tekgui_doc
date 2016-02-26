@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+	<title>Ini file - Tekgui</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <link href="../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">Tekgui</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Francais <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../doc-fr/">Doc</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../fonction-fr/">Fonction</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">English <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../doc-en/">Doc</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../function-en/">Function</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Exemple <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li class="active">
+                            <a href="./">Ini file</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../basic-c-program/">Demo program</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../function-en/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../basic-c-program/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#this-is-an-example-of-a-fonctional-ini-file">This is an example of a fonctional ini file.</a></li>
+        
+    
+        <li class="main "><a href="#you-can-copy-it-and-try-to-change-some-value-to-try-the-library">You can copy it and try to change some value to try the library.</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="this-is-an-example-of-a-fonctional-ini-file"><font color="#A0522D">This is an example of a fonctional ini file.</br></br></h1>
+<h1 id="you-can-copy-it-and-try-to-change-some-value-to-try-the-library">You can copy it and try to change some value to try the library.</br></br></font color="#A0522D"></h1>
+<pre><code>[info]
+name=&quot;bonjour&quot;
+height=800
+width=800
+color=200,200,200
+max_ram=15
+
+[window]
+nbr_button=3
+name_button=button1,button2,button3
+nbr_textbox=2
+name_textbox=textbox1,textbox2
+nbr_checkbox=2
+name_checkbox=checkbox1,checkbox2
+nbr_picbox=2
+name_picbox=picbox1,picbox2
+
+[button1]
+name=&quot;button1&quot;
+posx=0
+posy=50
+height=100
+width=100
+color=70,70,70
+select_color=150,150,150
+fct_to_call=&quot;button1&quot;
+
+[button2]
+name=&quot;button_2_name&quot;
+posx=300
+posy=300
+height=50
+width=200
+color=255,255,255
+select_color=150,150,150
+fct_to_call=&quot;button2&quot;
+
+[button3]
+name=&quot;button_3_name&quot;
+posx=0
+posy=700
+height=900
+width=900
+color=80,130,240
+select_color=170,0,170
+fct_to_call=&quot;button3&quot;
+
+[textbox1]
+name=&quot;bonjour&quot;
+posx=300
+posy=100
+height=100
+width=300
+color=80,80,80
+text=&quot;tektext2&quot;
+
+[textbox2]
+name=&quot;tekbox2&quot;
+posx=500
+posy=500
+height=100
+width=200
+color=80,80,80
+text=&quot;bonjour2&quot;
+
+[checkbox1]
+name=&quot;checkbox1&quot;
+posx=700
+posy=70
+height=50
+width=50
+fct_to_call_check=&quot;check&quot;
+fct_to_call_not_check=&quot;not_check&quot;
+
+[checkbox2]
+name=&quot;checkbox1&quot;
+posx=70
+posy=500
+height=100
+width=100
+fct_to_call_check=&quot;check&quot;
+fct_to_call_not_check=&quot;not_check&quot;
+
+[picbox1]
+name=&quot;source/emoji6.png&quot;
+posx=100
+posy=250
+
+[picbox2]
+name=&quot;source/piece.png&quot;
+posx=650
+posy=320
+
+</code></pre></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
