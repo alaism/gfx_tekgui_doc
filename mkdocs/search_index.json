@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Projet : Librairie tekgui\n\n\n \n \n\nL'objectif de la librairie tekgui est de vous faciliter l'utilisation de la librairie Lapin.\n\nPour cela, plusieurs fonction sont \u00e0 votre disposition pour cr\u00e9er et personnaliser votre interface.\n\nPour utiliser ses fonctions, il est n\u00e9cessaire d'inclure la librairie tekgui dans votre Projet.\n\n\nCette librairie est disponible en \nfran\u00e7ais\n or in\n\nenglish\n\n\n\n\nInformations\n\n\n\nLa librairie et la documentation a \u00e9t\u00e9 cr\u00e9\u00e9 et r\u00e9dig\u00e9 par Martin Alais.\n\nFait en f\u00e9vrier 2016 \u00e0 Lyon.",
+            "text": "Projet : Librairie tekgui\n\n\n \n \n\nL'objectif de la librairie tekgui est de vous faciliter l'utilisation de la librairie Lapin.\n\nPour cela, plusieurs fonction sont \u00e0 votre disposition pour cr\u00e9er et personnaliser votre interface.\n\nPour utiliser ses fonctions, il est n\u00e9cessaire d'inclure la librairie tekgui dans votre Projet.\n\n\nCette librairie est disponible en \nfran\u00e7ais\n or in\n\nenglish\n\n\n\n\nInformations\n\n\n\nLa librairie et la documentation a \u00e9t\u00e9 cr\u00e9\u00e9 et r\u00e9dig\u00e9 par Martin Alais.\n\nPour toute question, \nmartin.alais@epitech.eu\n\nFait en f\u00e9vrier 2016 \u00e0 Lyon.",
             "title": "Home"
         },
         {
@@ -12,7 +12,7 @@
         },
         {
             "location": "/#informations",
-            "text": "La librairie et la documentation a \u00e9t\u00e9 cr\u00e9\u00e9 et r\u00e9dig\u00e9 par Martin Alais. \nFait en f\u00e9vrier 2016 \u00e0 Lyon.",
+            "text": "La librairie et la documentation a \u00e9t\u00e9 cr\u00e9\u00e9 et r\u00e9dig\u00e9 par Martin Alais. \nPour toute question,  martin.alais@epitech.eu \nFait en f\u00e9vrier 2016 \u00e0 Lyon.",
             "title": "Informations"
         },
         {
