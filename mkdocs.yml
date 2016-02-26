@@ -1,0 +1,14 @@
+site_name: Tekgui
+theme: slate
+
+pages:
+- Home : 'index.md'
+- Francais :
+  - Doc : 'doc-fr.md'
+  - Fonction : 'fonction-fr.md'
+- English :
+  - Doc : 'doc-en.md'
+  - Function : 'function-en.md'
+- Exemple :
+  - Ini file : 'exemple-ini.md'
+  - Demo program : 'basic-c-program.md'
