@@ -169,9 +169,9 @@ bunny_loop();
 <hr />
 <h2 id="creation-dun-fichier-ini"></br></br><U><font color="#A0522D">Création d'un fichier ini</font color="#A0522D"></U></h2>
 <p></br></br>
-La librairie tekgui se base sur un fichier ini pour créer une interface graphique personalisée.</br>
+La librairie tekgui se base sur un fichier ini pour créer une interface graphique personnalisée.</br>
 Il est donc nécessaire de créer un fichier ini correctement.</br>
-Certaine partie sont obligatoires, d'autre sont personalisables.
+Certaines parties sont obligatoires, d'autres sont personnalisables.
 Le fichier ini doit être configuré comme dans l'exemple ci-dessous.</br>
 Dans le cas contraire, les fonctions de la librairie tekgui vont renvoyer une erreur.</br>
 </br></br>
@@ -187,10 +187,10 @@ max_ram=15
 <p></br>
 Le champ <code>[info]</code> est <strong>obligatoire</strong>.</br>
 Le champ <code>window</code> contient le nom de la fenêtre créée par la librairie.</br>
-Les champs <code>height</code> et <code>width</code> contiennent la longueur et la largeur de la fenetre.</br>
-Le champ <code>color</code> contient la couleur de la fenetre.</br>
-Le champ <code>max_ram</code> contient le maximum de ram utilisable par la programme.</br>
-Si l'erreur <font color="RED"><em>Error: error in malloc</em></font color="RED"> apparait, c'est probablement que max_ram est trop petit pour supporter la librairie Tekgui.</br>
+Les champs <code>height</code> et <code>width</code> contiennent la longueur et la largeur de la fenêtre.</br>
+Le champ <code>color</code> contient la couleur de la fenêtre.</br>
+Le champ <code>max_ram</code> contient le maximum de ram utilisable par le programme.</br>
+Si l'erreur <font color="RED"><em>Error: error in malloc</em></font color="RED"> apparaît, c'est probablement que max_ram est trop petit pour supporter la librairie Tekgui.</br>
 Si window, color, height ou width n'est pas complété ou existant, les fonctions retourneront une erreur.</br></p>
 <hr />
 <h2 id="initialisation-du-fichier-ini"></br></br><U><font color="#A0522D">Initialisation du fichier ini</font color="#A0522D"></U></h2>
@@ -211,15 +211,15 @@ name_picbox=picbox1,picbox2
 
 <p></br>
 Le champ <code>[window]</code> est obligatoire.</br>
-Le champ <code>nbr_button</code> est le nombre de bouton présent dans la fenètre.</br>
-Le champ <code>name_button</code> contient les nom des boutons. Le nombre de nom et <code>nbr_button</code> doivent etre les même.</br>
-Le champ <code>nbr_textbox</code> est le nombre de case de text présent dans la fenêtre.</br>
-Le champ <code>name_textbox</code> contient les noms des cases de text. Le nombre de nom et <code>nbr_textbox doivent</code> etre les même.</br>
-Le champ <code>nbr_checkbox</code> est le nombre de checkbox présent dans la fenêtre.</br>
-Le champ <code>name_checkbox</code> contient les noms des cases de text. Le nombre de nom et <code>nbr_checkbox</code> doivent etre les même.</br>
-Le champ <code>nbr_picbox</code> est le nombre d'image présent dans la fenêtre.</br>
-Le champ <code>name_picbox</code> contient les noms des images. Le nombre de nom et <code>nbr_picbox</code> doivent etre les même.</br>
-<strong>ATTENTION</strong> Tous les champ doivent apparaitre dans le fichier ini.</br>
+Le champ <code>nbr_button</code> est le nombre de boutons présent dans la fenêtre.</br>
+Le champ <code>name_button</code> contient les noms des boutons. Le nombre de noms et <code>nbr_button</code> doivent être les mêmes.</br>
+Le champ <code>nbr_textbox</code> est le nombre de cases de texte présent dans la fenêtre.</br>
+Le champ <code>name_textbox</code> contient les noms des cases de texte. Le nombre de noms et <code>nbr_textbox doivent</code> être les mêmes.</br>
+Le champ <code>nbr_checkbox</code> est le nombre de checkbox présentes dans la fenêtre.</br>
+Le champ <code>name_checkbox</code> contient les noms des cases de texte. Le nombre de noms et <code>nbr_checkbox</code> doivent être les mêmes.</br>
+Le champ <code>nbr_picbox</code> est le nombre d'images présente dans la fenêtre.</br>
+Le champ <code>name_picbox</code> contient les noms des images. Le nombre de noms et <code>nbr_picbox</code> doivent être les mêmes.</br>
+<strong>ATTENTION</strong> Tous les champs doivent apparaître dans le fichier ini.</br>
 Si, par exemple, vous ne voulez pas de checkbox, voici comment faire :</p>
 <pre><code>[window]
 nbr_button=3
@@ -236,7 +236,7 @@ name_picbox=picbox1,picbox2
 <hr />
 <h2 id="configuration-des-boutons"></br></br><U><font color="#A0522D">Configuration des boutons</font color="#A0522D"></U></h2>
 <p></br></br>
-Apres avoir été initialisé, chaque bouton doit être defini comme dans l'exemple ci-dessous.
+Après avoir été initialisé, chaque bouton doit être défini comme dans l'exemple ci-dessous.
 </br></br>
 Exemple :</p>
 <pre><code class="ini">[button1]
@@ -251,19 +251,19 @@ fct_to_call=&quot;button1&quot;
 </code></pre>
 
 <p></br>
-Le champ <code>[button1]</code> contient le nom du bouton que vous voulez definir, entourée de [ ].</br>
+Le champ <code>[button1]</code> contient le nom du bouton que vous voulez définir, entouré de [ ].</br>
 Le champ <code>name</code> contient le nom du bouton dans la fenêtre.</br>
-Les champ <code>posx</code> et <code>posy</code> contiennent la position de départ du bouton.</br>
-Les champ <code>height</code> et <code>wight</code> définissent la taille du bouton.</br>
-Le champ <code>color</code> est la couleur du boutton.</br>
+Les champs <code>posx</code> et <code>posy</code> contiennent la position de départ du bouton.</br>
+Les champs <code>height</code> et <code>wight</code> définissent la taille du bouton.</br>
+Le champ <code>color</code> est la couleur du bouton.</br>
 Le champ <code>select_color</code> est la couleur lorsque le bouton est selectionné.</br>
-Le champ <code>fct_to_call</code> contient le nom de la fonction appeller lorsque le bouton est cliquer.</br>
+Le champ <code>fct_to_call</code> contient le nom de la fonction appeler lorsque le bouton est cliqué.</br>
 Chaque bouton doit avoir sa propre configuration.</br>
-Si il y a deux configurations différentes pour le même bouton, la première configuration trouvé sera activée, la seconde sera ignorée.</p>
+S'il y a deux configurations différentes pour le même bouton, la première configuration trouvée sera activée, la seconde sera ignorée.</p>
 <hr />
 <h2 id="configuration-des-boites-de-texte"></br></br><U><font color="#A0522D">Configuration des boîtes de texte</font color="#A0522D"></U></h2>
 <p></br></br>
-Apres avoir été initialisé, chaque boîte de texte doit être définie comme dans l'exemple ci-dessous.
+Après avoir été initialisée, chaque boîte de texte doit être définie comme dans l'exemple ci-dessous.
 </br></br>
 Exemple :</p>
 <pre><code class="ini">[textbox1]
@@ -277,23 +277,23 @@ text=&quot;bonjour&quot;
 </code></pre>
 
 <p></br>
-Le champ <code>[textbox1]</code> contient le nom de la boite que vous voulez definir, entourée de [ ].</br>
+Le champ <code>[textbox1]</code> contient le nom de la boîte que vous voulez définir, entouré de [ ].</br>
 Le champ <code>name</code> contient le nom de la textbox dans la fenêtre.</br>
-Les champ <code>posx</code> et <code>posy</code> contiennent la position de départ de la textbox.</br>
-Les champ <code>height</code> et <code>wight</code> définissent la taille de la boite.</br>
+Les champs <code>posx</code> et <code>posy</code> contiennent la position de départ de la textbox.</br>
+Les champs <code>height</code> et <code>wight</code> définissent la taille de la boîte.</br>
 Le champ <code>color</code> contient la couleur de la textbox.</br>
-Le champ <code>text</code> contient l'écriture initial à l'intérieur de la boite.</br>
+Le champ <code>text</code> contient l'écriture initial à l'intérieur de la boîte.</br>
 </br>
-Chaque boite de texte doit avoir sa propre définition.</br>
-Si il y a deux configurations différentes pour la même boite, la première configuration trouvé sera activée, la seconde sera ignorée.</br>
-Pour utiliser la boite de texte, il suffit de cliquer dessus.</br>
-Seul les caractères alphabétiques, les espaces et la touche retour arrière peuvent être utilisé dans ses boîtes</br>
-Les autres carractères n'auront uncun effet.</br>
+Chaque boîte de texte doit avoir sa propre définition.</br>
+S'il y a deux configurations différentes pour la même boîte, la première configuration trouvée sera activée, la seconde sera ignorée.</br>
+Pour utiliser la boîte de texte, il suffit de cliquer dessus.</br>
+Seuls les caractères alphabétiques, les espaces et la touche retour arrière peuvent être utilisés dans ces boîtes</br>
+Les autres caractères n'auront ancun effet.</br>
 </br></p>
 <hr />
 <h2 id="configuration-des-checkbox"></br></br><U><font color="#A0522D">Configuration des Checkbox</font color="#A0522D"></U></h2>
 <p></br></br>
-Apres avoir été initialisé, chaque checkbox doit être définie comme dans l'exemple ci-dessous.
+Après avoir été initialisée, chaque checkbox doit être définie comme dans l'exemple ci-dessous.
 </br></br>
 Exemple :</p>
 <pre><code class="ini">[checkbox1]
@@ -308,22 +308,22 @@ fct_to_call_not_check=&quot;not_check&quot;
 </code></pre>
 
 <p></br>
-Le champ <code>[textbox1]</code> contient le nom de la checkbox que vous voulez définir, entourée de [ ].</br>
+Le champ <code>[textbox1]</code> contient le nom de la checkbox que vous voulez définir, entouré de [ ].</br>
 Le champ <code>name</code> contient le nom de la checkbox dans la fenêtre.</br>
-Les champ <code>posx</code> et <code>posy</code> contiennent la position de départ de la checkbox.</br>
-Les champ <code>height</code> et <code>wight</code> définissent la taille de la checkbox.</br>
-Le champ <code>fct_to_call_check</code> contient le nom de la fonction à appller lorsque la case est cochée</br>
-le chemp <code>fct_to_call_not_check</code> contient le nom de la fonction à appeller lorque la case n'est pas cochée</br>
+Les champs <code>posx</code> et <code>posy</code> contiennent la position de départ de la checkbox.</br>
+Les champs <code>height</code> et <code>wight</code> définissent la taille de la checkbox.</br>
+Le champ <code>fct_to_call_check</code> contient le nom de la fonction à appeler lorsque la case est cochée</br>
+Le champ <code>fct_to_call_not_check</code> contient le nom de la fonction à appeler lorsque la case n'est pas cochée</br>
 </br>
 Chaque checkbox doit avoir sa propre définition.</br>
-Si il y a deux configurations différentes pour la même checkbox, la première configuration trouvé sera activée, la seconde sera ignorée.</br>
-Il suffit de cliquer sur la checkbox pour changer sont etat.</br>
+S'il y a deux configurations différentes pour la même checkbox, la première configuration trouvée sera activée, la seconde sera ignorée.</br>
+Il suffit de cliquer sur la checkbox pour changer son état.</br>
 </br></p>
 <hr />
 <h2 id="configuration-des-picbox"></br></br><U><font color="#A0522D">Configuration des picbox</font color="#A0522D"></U></h2>
 <p></br></br>
-Apres avoir été initialisé, chaque picbox doit être defini comme dans l'exemple ci-dessous.</br>
-Le picbox veut dire Picture box, ou "boite d'image"
+Après avoir été initialisé, chaque picbox doit être definie comme dans l'exemple ci-dessous.</br>
+picbox veut dire Picture box, ou "boîte d'image"
 </br></br>
 Exemple :</p>
 <pre><code class="ini">[picbox1]
@@ -333,26 +333,26 @@ posy=250
 </code></pre>
 
 <p></br>
-Le champ <code>[picbox1]</code> contient le nom de la picbox que vous voulez definir, entourer de [ ].</br>
-Le champ <code>name</code> contient le lien de l'image a charger.</br>
-Les champ <code>posx</code> et <code>posy</code> contiennent la position de départ de la checkbox.</br>
+Le champ <code>[picbox1]</code> contient le nom de la picbox que vous voulez définir, entouré de [ ].</br>
+Le champ <code>name</code> contient le lien de l'image à charger.</br>
+Les champs <code>posx</code> et <code>posy</code> contiennent la position de départ de la checkbox.</br>
 </br>
-Chaque picbox doit avoir sa propre definition.</br>
-Si il y a deux configurations différentes pour la meme picbox, la première configuration trouvé sera activée, la seconde sera ignorée.</br>
-L'image sera affiché à partir des coordonnées donné, jusqu'a sa fin.</br>
-Si la fin de l'image se trouve après la fin de la fenètre, une erreur apparaitra dans la terminal.</br>
-<code>name</code> doit contenir un lien direct ou le chemin d'accés à votre image à partir de la racine de la librairie.</br>
-Si l'image donnée n'existe pas ou que le lien est mal entée, la fonction retournera une erreur.</br>
+Chaque picbox doit avoir sa propre définition.</br>
+S'il y a deux configurations différentes pour la même picbox, la première configuration trouvée sera activée, la seconde sera ignorée.</br>
+L'image sera affichée à partir des coordonnées données, jusqu'à sa fin.</br>
+Si la fin de l'image se trouve après la fin de la fenètre, une erreur apparaitra dans le terminal.</br>
+<code>name</code> doit contenir un lien direct ou le chemin d'accès à votre image à partir de la racine de la librairie.</br>
+Si l'image donnée n'existe pas ou que le lien est mal enté, la fonction retournera une erreur.</br>
 </br></p>
 <hr />
 <h2 id="aide"></br></br><U><font color="#A0522D">Aide</font color="#A0522D"></U></h2>
-<p>Pour tester ses fonctions, vous pouver vous servir du fichier ini donner <a href="../exemple-ini/"><U><font color="#AFEEEE">ici</font color="#AFEEEE"></U></a></br>
+<p>Pour tester ces fonctions, vous pouvez vous servir du fichier ini donné <a href="../exemple-ini/"><U><font color="#AFEEEE">ici</font color="#AFEEEE"></U></a></br>
 Pour tester la librairie avec le fichier ini, il vous faudra un programme.</br>
 Un code basique vous est donné <a href="../basic-c-program/"><U><font color="#AFEEEE">ici</font color="#AFEEEE"></U></a></br></br></br></p>
 <hr />
 <h2 id="les-fonctions-de-la-librairie"><U><font color="#A0522D">Les fonctions de la librairie</font color="#A0522D"></U></h2>
-<p>Toutes les fonctions présente dans la librairie  sont dans l'onglet  <a href="../fonction-fr"><font color="#AFEEEE">fonction</font color="#AFEEEE"></a></p>
-<p>Si vous chercher une fonction spécifique, vous pourver cliquer qur les lien suivant:<br />
+<p>Toutes les fonctions présentes dans la librairie  sont dans l'onglet  <a href="../fonction-fr"><font color="#AFEEEE">fonction</font color="#AFEEEE"></a></p>
+<p>Si vous cherchez une fonction spécifique, vous pouvez cliquer sur les lien suivant:<br />
 </br>
 </br>
 1. <a href="../fonction-fr/#tekgui_load"><U><font color="#AFEEEE">tekgui_load</font color="#AFEEEE"></U></a></br>

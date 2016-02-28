@@ -3,7 +3,7 @@
 You can copy it and try to change some value to try the library.</br></br>
 ============
 
-I exptect you understand all liblapin function</br></font color="#A0522D">
+I expect you understand all liblapin function</br></font color="#A0522D">
 ---
 </br></br>
 

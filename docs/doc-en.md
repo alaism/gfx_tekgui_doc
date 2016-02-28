@@ -1,7 +1,7 @@
-<U><font color="#A0522D">**Utilisation de la librairie tekgui**</font color="#A0522D"></U>
+<U><font color="#A0522D">**Usage of the library**</font color="#A0522D"></U>
 ===============
 </br></br>
-This manual is made for user who know how to use the following function :
+This manual is made for users who know how to use the following function :
 
 ```c
 bunny_set_key_response();
@@ -13,7 +13,7 @@ bunny_loop();
 </br></br><U><font color="#A0522D">Establishment of an ini file</font color="#A0522D"></U>
 ------
 </br></br>
-The tekgui library need a ini file to work.</br>
+The tekgui library needs a ini file to work.</br>
 This is necessary to create a good one.</br>
 Some part of the ini file are mandatory, some other are customizable.</br>
 The ini file must be set like the following example.</br>
@@ -32,10 +32,10 @@ max_ram=15
 ```
 </br>
 The domain `[info]` is a mandatory field.</br>
-The domain `window` contain the name of the window made by the library.</br>
+The domain `window` contains the name of the window made by the library.</br>
 The domain `height` and `width` contains the height and the width of the window.</br>
-The domain `color` contain the color of the window.</br>
-The domain `max_ram` contain the maximum of ram usable by the program.</br></br>
+The domain `color` contains the color of the window.</br>
+The domain `max_ram` contains the maximum of ram usable by the program.</br></br>
 If you see <font color="RED">*Error: error in malloc*</font color="RED"> print on the terminal, it's probably because `max_ram` is too short.</br>
 If window, color, height or width is empty or miss, the function will return an error.</br>
 
@@ -61,14 +61,14 @@ name_picbox=picbox1,picbox2
 </br>
 The domain `[window]` is a mandatory field.</br>
 The domain `nbr_button` is the number of button in the window.</br>
-The domain `name_button` contain the name of all buttons. The number of name and `nbr_button` must match.</br>
+The domain `name_button` contains the name of all buttons. The number of name and `nbr_button` must match.</br>
 The domain `nbr_textbox` is the number of textbox in the window.</br>
-The domain `name_textbox` contain the name of all textbox. The number of name and `nbr_text` must match.</br>
+The domain `name_textbox` contains the name of all textbox. The number of name and `nbr_text` must match.</br>
 The domain `nbr_checkbox` is the number of checkbox in the window.</br>
-The domain `name_checkbox` contain the name of all checkbox. The number if name and `nbr_checkbox` must match.</br>
+The domain `name_checkbox` contains the name of all checkbox. The number of name and `nbr_checkbox` must match.</br>
 The domain `nbr_picbox` is the number of picbox in the window.</br>
-The domain `name_picbox` contain rhe name of all picbox. The number if name and `nbr_checkbox` must match.</br></br>
-__WARNING__ All the domain must be set.</br>
+The domain `name_picbox` contain the name of all picbox. The number of name and `nbr_checkbox` must match.</br></br>
+__WARNING__ All the domains must be set.</br>
 If, for example, you don't want checkbox in you interface, you should do :
 
 ```
@@ -103,13 +103,13 @@ select_color=150,150,150
 fct_to_call="button1"
 ```
 </br>
-The domain `[button1]` contain the name of the button to set, surrounded by [ ].</br>
-The domain `name` contain the name of button in the window.</br>
+The domain `[button1]` contains the name of the button to set, surrounded by [ ].</br>
+The domain `name` contains the name of button in the window.</br>
 The domain `posx` and `posy` contains the starting position of the button.</br>
-The domain `height` and `wight` define the size of the button.</br>
-The domain `color` contain the color of the button.</br>
+The domain `height` and `width` defines the size of the button.</br>
+The domain `color` contains the color of the button.</br>
 The domain `select_color` is the color when the mousse is on the button.</br>
-The domain `fct_to_call` contain the name of the function to call when you clock on the button.</br></br>
+The domain `fct_to_call` contains the name of the function to call when you clock on the button.</br></br>
 Each button must have is own setup.</br>
 If there is two different setup for the same button, the program will only use the first one.
 
@@ -132,17 +132,17 @@ color=80,80,80
 text="bonjour"
 ```
 </br>
-The domain `[textbox1]` contain the name of the textbox, surrounded by [ ].</br>
-The domain `name` contain the name of the textbox. The name will not be print on the window.</br>
-The domain `posx` and `posy` define the starting position of the textbox.</br>
-The domain `height` and `wight` define the size if the textbox.</br>
-The domain `color` contain the color of the textbox.</br>
-The domain `text` contain the initial string print in the textbox</br></br>
+The domain `[textbox1]` contains the name of the textbox, surrounded by [ ].</br>
+The domain `name` contains the name of the textbox. The name will not be print on the window.</br>
+The domain `posx` and `posy` defines the starting position of the textbox.</br>
+The domain `height` and `width` defines the size if the textbox.</br>
+The domain `color` contains the color of the textbox.</br>
+The domain `text` contains the initial string print in the textbox</br></br>
 Each textbox must have is own setup.</br>
 If there is two different setup for the same textbox, the program will only use the first one.</br>
 To use the textbox, you just have to click on it.</br>
 Only the alphabetical character, the space and delete can be use in textbox.</br>
-The other character will have no effect.</br>
+The others character will have no effect.</br>
 </br>
 
 -----
@@ -165,15 +165,15 @@ fct_to_call_not_check="not_check"
 
 ```
 </br>
-The domain `[checkbox1]` contain the name of the Checkbox, surrounded by [ ].</br>
-The domain `name` contain the name of the checkbox. The name will not be print on the window.</br>
-The domain `posx` and `posy` define the starting position of the checkbox.</br>
-The domain `height` and `wight` define the size if the checkbox.</br>
-The domain `fct_to_call_check` contain the name of the function to call when the checkbox is check.</br>
-The domain `fct_to_call_not_check` contain the name of the function to call when the checkbox is uncheck.</br>
+The domain `[checkbox1]` contains the name of the Checkbox, surrounded by [ ].</br>
+The domain `name` contains the name of the checkbox. The name will not be print on the window.</br>
+The domain `posx` and `posy` defines the starting position of the checkbox.</br>
+The domain `height` and `width` defines the size if the checkbox.</br>
+The domain `fct_to_call_check` contains the name of the function to call when the checkbox is check.</br>
+The domain `fct_to_call_not_check` contains the name of the function to call when the checkbox is uncheck.</br>
 </br>
 Each checkbox must have is own setup.</br>
-If there is two different setup for the same checkbox, the program will onlu use the first one.</br>
+If there is two different setup for the same checkbox, the program will only use the first one.</br>
 </br>
 
 -----
@@ -181,9 +181,9 @@ If there is two different setup for the same checkbox, the program will onlu use
 -----
 </br></br>
 picbox mean picture box.</br>
-Each picbox but be define as below.</br>
+Each picbox must be define as below.</br>
 </br></br>
-Exemple :
+Example :
 
 ```ini
 [picbox1]
@@ -192,14 +192,14 @@ posx=100
 posy=250
 ```
 </br>
-The domain `[picbox1]` contain the name of the picbox, surrounded by [ ].</br>
-The domain `name` contain the link of the picture.</br>
-The demain `posx` and `posy` contain the starting position of the pixture.</br>
+The domain `[picbox1]` contains the name of the picbox, surrounded by [ ].</br>
+The domain `name` contains the link of the picture.</br>
+The domain `posx` and `posy` contains the starting position of the picture.</br>
 </br>
 Each picbox must have is own setup.</br>
-If there is two different setup for the same checkbox, the program will use only the first one.</br>
+If there is two different setup for the same checkbox, the program will only use the first one.</br>
 The picture will be print from the starting position to the end.</br>
-If the end of the picture is out of the window, an arror will be print.</br>
+If the end of the picture is out of the window, an error will be print.</br>
 Name must contain the link to the picture, or the function will retrun an error.</br>
 If the picture not exist, or the link is false, the function will retrun an error.</br>
 </br>
@@ -207,15 +207,15 @@ If the picture not exist, or the link is false, the function will retrun an erro
 -----
 </br></br><U><font color="#A0522D">Help</font color="#A0522D"></U>
 -----
-To try the librairie, u can use [<U><font color="#AFEEEE">this ini file</font color="#AFEEEE"></U>](./exemple-ini.md)</br>
-If you need a C program, u can use [<U><font color="#AFEEEE">mine</font color="#AFEEEE"></U>](./basic-c-program.md)</br></br></br>
+To try the library, you can use [<U><font color="#AFEEEE">this ini file</font color="#AFEEEE"></U>](./exemple-ini.md)</br>
+If you need a C program, you can use [<U><font color="#AFEEEE">mine</font color="#AFEEEE"></U>](./basic-c-program.md)</br></br></br>
 ---
 </br></br><U><font color="#A0522D">function in the library</font color="#A0522D"></U>
 ---
 
 All the function implement in the library are [<font color="#AFEEEE">here</font color="#AFEEEE">](./function-en)
 
-If you are looking for a specific function, u can click on the following link :
+If you are looking for a specific function, you can click on the following link :
 </br>
 </br>
 1. [<U><font color="#AFEEEE">tekgui_load</font color="#AFEEEE"></U>](./function-en/#tekgui_load)</br>

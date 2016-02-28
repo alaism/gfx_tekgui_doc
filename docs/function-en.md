@@ -18,8 +18,8 @@ If not, it will do nothing.
 <font color="#A0522D">tekgui_load</font color="#A0522D">
 ----
 </br></br>
-The tekgui_load function load all information from the ini file and complete the structure.</br>
-You must calll this function first to be able to use all other.</br>
+The tekgui_load function loads all informations from the ini file and completes the structure.</br>
+You must call this function first to be able to use all others.</br>
 tekgui_load is define as below:
 
 ```
@@ -32,8 +32,8 @@ If an error is found, the function will return NULL and print an error.</br>
 </br></br><font color="#A0522D">tekgui_display</font color="#A0522D">
 ------
 </br></br>
-The function tekgui_display write all the information from the structure to the pixelarray.</br>
-**<font color="red">Warning</font color="red"> : tekgui_display will not display the pixelarray, she will just complete it**</br>
+The function tekgui_display write all the informations from the structure to the pixelarray.</br>
+**<font color="red">Warning</font color="red"> : tekgui_display will not display the pixelarray, it will just complete it**</br>
 If you want to display the window, you must call the fonction [<font color="#AFEEEE">display_window</font color="#AFEEEE">](./function-en/#display_window)</br>
 tekgui_display is define as below:
 
@@ -56,14 +56,14 @@ The function display_window print the window.
 void      display_window(t_tekgui *tekgui);
 ```
 
-This function print the pixelarray, but can not set it.
+This function prints the pixelarray, but can not set it.
 To set the pixelarray, you must use [<font color="#AFEEEE">tekgui_display</font color="#AFEEEE">](./function-en/#tekgui_display)</br>
 
 ---
 </br></br><font color="#A0522D">tekfunction</font color="#A0522D">
 ---
 </br></br>
-tekfunction take in parameter the name of a function and return the adresse of this function.</br>
+tekfunction takes in parameter the name of a function and return the adresse of this function.</br>
 tekfunction is define as below
 
 ```
@@ -71,14 +71,14 @@ void      *tekfunction(const char *functname);
 ```
 </br></br>
 
-If the function does not exist or an error append, tekfunction will return NULL.</br>
+If the function does not exist or an error happened, tekfunction will return NULL.</br>
 
 ---
 </br></br><font color="#A0522D">tektext</font color="#A0522D">
 ---
 </br></br>
 This function print a string.</br>
-tektext take in parameter two pixelarray and a string to print.</br>
+tektext takes in parameter two pixelarray and a string to print.</br>
 tektext is define as below :
 
 
@@ -91,7 +91,7 @@ void tektext(t_bunny_pixelarray *out, const char *str, t_bunny_pixelarray *font_
 ---
 </br></br>
 
-The function tekgetpixel take a pixelarray and a position of a pixel and return his color.</br>
+The function tekgetpixel takes a pixelarray and a position of a pixel and return his color.</br>
 tekgetpixel is define as below :</br>
 ```
 t_color     tekgetpixel(t_bunny_pixelarray *, t_bunny_position *);
@@ -111,11 +111,11 @@ void      tekgui_stop(t_tekgui *);
 </br></br><font color="#A0522D">tekgui_max_ram</font color="#A0522D">
 ---
 </br></br>
-The function tekgui_max_ram take in parameter the ini file, and set the maximum ram as definie in the ini.</br>
+The function tekgui_max_ram takes in parameter the ini file, and set the maximum ram as definite in the ini.</br>
 tekgui_max_ram is definie as below :
 
 ```
 void    tekgui_max_ram(const char *name);
 ```
 
-U must call the function before [<U><font color="#AFEEEE">tekgui_load</font color="#AFEEEE"></U>](./fonction-fr/#tekgui_load)
+You must call the function before [<U><font color="#AFEEEE">tekgui_load</font color="#AFEEEE"></U>](./fonction-fr/#tekgui_load)
