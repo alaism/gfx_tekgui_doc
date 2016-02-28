@@ -103,7 +103,7 @@ select_color=150,150,150
 fct_to_call="button1"
 ```
 </br>
-The domain `[button1]` contain the name of the name of the button to set, surrounded by [ ].</br>
+The domain `[button1]` contain the name of the button to set, surrounded by [ ].</br>
 The domain `name` contain the name of button in the window.</br>
 The domain `posx` and `posy` contains the starting position of the button.</br>
 The domain `height` and `wight` define the size of the button.</br>
@@ -111,7 +111,7 @@ The domain `color` contain the color of the button.</br>
 The domain `select_color` is the color when the mousse is on the button.</br>
 The domain `fct_to_call` contain the name of the function to call when you clock on the button.</br></br>
 Each button must have is own setup.</br>
-If there is two different setup for the same button, the program will use only the first one.
+If there is two different setup for the same button, the program will only use the first one.
 
 -----
 </br></br><U><font color="#A0522D">Textbox setup</font color="#A0522D"></U>
@@ -139,7 +139,7 @@ The domain `height` and `wight` define the size if the textbox.</br>
 The domain `color` contain the color of the textbox.</br>
 The domain `text` contain the initial string print in the textbox</br></br>
 Each textbox must have is own setup.</br>
-If there is two different setup for the same textbox, the program will use only the first one.</br>
+If there is two different setup for the same textbox, the program will only use the first one.</br>
 To use the textbox, you just have to click on it.</br>
 Only the alphabetical character, the space and delete can be use in textbox.</br>
 The other character will have no effect.</br>
@@ -173,7 +173,7 @@ The domain `fct_to_call_check` contain the name of the function to call when the
 The domain `fct_to_call_not_check` contain the name of the function to call when the checkbox is uncheck.</br>
 </br>
 Each checkbox must have is own setup.</br>
-If there is two different setup for the same checkbox, the program will use only the first one.</br>
+If there is two different setup for the same checkbox, the program will onlu use the first one.</br>
 </br>
 
 -----
@@ -201,7 +201,7 @@ If there is two different setup for the same checkbox, the program will use only
 The picture will be print from the starting position to the end.</br>
 If the end of the picture is out of the window, an arror will be print.</br>
 Name must contain the link to the picture, or the function will retrun an error.</br>
-If the pitecute not exist, or the link is false, the function will retrun an error.</br>
+If the picture not exist, or the link is false, the function will retrun an error.</br>
 </br>
 
 -----

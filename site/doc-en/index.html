@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+	<title>Doc - Tekgui</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <link href="../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">Tekgui</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Francais <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../doc-fr/">Doc</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../fonction-fr/">Fonction</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">English <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li class="active">
+                            <a href="./">Doc</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../function-en/">Function</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Exemple <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../exemple-ini/">Ini file</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../basic-c-program/">Demo program</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../fonction-fr/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../function-en/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#utilisation-de-la-librairie-tekgui">Utilisation de la librairie tekgui</a></li>
+        
+            <li><a href="#establishment-of-an-ini-file">Establishment of an ini file</a></li>
+        
+            <li><a href="#initialization-of-the-ini-file">Initialization of the ini file</a></li>
+        
+            <li><a href="#button-setup">Button setup</a></li>
+        
+            <li><a href="#textbox-setup">Textbox setup</a></li>
+        
+            <li><a href="#checkbox-setup">Checkbox setup</a></li>
+        
+            <li><a href="#picbox-setup">picbox setup</a></li>
+        
+            <li><a href="#help">Help</a></li>
+        
+            <li><a href="#function-in-the-library">function in the library</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="utilisation-de-la-librairie-tekgui"><U><font color="#A0522D"><strong>Utilisation de la librairie tekgui</strong></font color="#A0522D"></U></h1>
+<p></br></br>
+This manual is made for user who know how to use the following function :</p>
+<pre><code class="c">bunny_set_key_response();
+bunny_set_loop_main_function();
+bunny_loop();
+</code></pre>
+
+<hr />
+<h2 id="establishment-of-an-ini-file"></br></br><U><font color="#A0522D">Establishment of an ini file</font color="#A0522D"></U></h2>
+<p></br></br>
+The tekgui library need a ini file to work.</br>
+This is necessary to create a good one.</br>
+Some part of the ini file are mandatory, some other are customizable.</br>
+The ini file must be set like the following example.</br>
+If not, some function of the library will return NULL and print an Error.</p>
+<p></br></br>
+Example :</p>
+<pre><code>[info]
+name=&quot;window&quot;
+height=800
+width=800
+color=200,200,200
+max_ram=15
+</code></pre>
+
+<p></br>
+The domain <code>[info]</code> is a mandatory field.</br>
+The domain <code>window</code> contain the name of the window made by the library.</br>
+The domain <code>height</code> and <code>width</code> contains the height and the width of the window.</br>
+The domain <code>color</code> contain the color of the window.</br>
+The domain <code>max_ram</code> contain the maximum of ram usable by the program.</br></br>
+If you see <font color="RED"><em>Error: error in malloc</em></font color="RED"> print on the terminal, it's probably because <code>max_ram</code> is too short.</br>
+If window, color, height or width is empty or miss, the function will return an error.</br></p>
+<hr />
+<h2 id="initialization-of-the-ini-file"></br></br><U><font color="#A0522D">Initialization of the ini file</font color="#A0522D"></U></h2>
+<p></br></br>
+This part is used to load the ini informations and set the tekgui structure.
+</br></br>
+Example :</p>
+<pre><code>[window]
+nbr_button=3
+name_button=button1,button2,button3
+nbr_textbox=2
+name_textbox=textbox1,textbox2
+nbr_checkbox=2
+name_checkbox=checkbox1,checkbox2
+nbr_picbox=2
+name_picbox=picbox1,picbox2
+</code></pre>
+
+<p></br>
+The domain <code>[window]</code> is a mandatory field.</br>
+The domain <code>nbr_button</code> is the number of button in the window.</br>
+The domain <code>name_button</code> contain the name of all buttons. The number of name and <code>nbr_button</code> must match.</br>
+The domain <code>nbr_textbox</code> is the number of textbox in the window.</br>
+The domain <code>name_textbox</code> contain the name of all textbox. The number of name and <code>nbr_text</code> must match.</br>
+The domain <code>nbr_checkbox</code> is the number of checkbox in the window.</br>
+The domain <code>name_checkbox</code> contain the name of all checkbox. The number if name and <code>nbr_checkbox</code> must match.</br>
+The domain <code>nbr_picbox</code> is the number of picbox in the window.</br>
+The domain <code>name_picbox</code> contain rhe name of all picbox. The number if name and <code>nbr_checkbox</code> must match.</br></br>
+<strong>WARNING</strong> All the domain must be set.</br>
+If, for example, you don't want checkbox in you interface, you should do :</p>
+<pre><code>[window]
+nbr_button=3
+name_button=button1,button2,button3
+nbr_textbox=2
+name_textbox=textbox1,textbox2
+nbr_checkbox=0
+name_checkbox=NULL
+nbr_picbox=2
+name_picbox=picbox1,picbox2
+
+</code></pre>
+
+<hr />
+<h2 id="button-setup"></br></br><U><font color="#A0522D">Button setup</font color="#A0522D"></U></h2>
+<p></br></br>
+Each button must be define as below :
+</br></br>
+Example :</p>
+<pre><code class="ini">[button1]
+name=&quot;salut&quot;
+posx=0
+posy=0
+height=100
+width=100
+color=70,70,70
+select_color=150,150,150
+fct_to_call=&quot;button1&quot;
+</code></pre>
+
+<p></br>
+The domain <code>[button1]</code> contain the name of the name of the button to set, surrounded by [ ].</br>
+The domain <code>name</code> contain the name of button in the window.</br>
+The domain <code>posx</code> and <code>posy</code> contains the starting position of the button.</br>
+The domain <code>height</code> and <code>wight</code> define the size of the button.</br>
+The domain <code>color</code> contain the color of the button.</br>
+The domain <code>select_color</code> is the color when the mousse is on the button.</br>
+The domain <code>fct_to_call</code> contain the name of the function to call when you clock on the button.</br></br>
+Each button must have is own setup.</br>
+If there is two different setup for the same button, the program will use only the first one.</p>
+<hr />
+<h2 id="textbox-setup"></br></br><U><font color="#A0522D">Textbox setup</font color="#A0522D"></U></h2>
+<p></br></br>
+Each textbox must be define as below :
+</br></br>
+Example :</p>
+<pre><code class="ini">[textbox1]
+name=&quot;tekbox1&quot;
+posx=300
+posy=100
+height=100
+width=300
+color=80,80,80
+text=&quot;bonjour&quot;
+</code></pre>
+
+<p></br>
+The domain <code>[textbox1]</code> contain the name of the textbox, surrounded by [ ].</br>
+The domain <code>name</code> contain the name of the textbox. The name will not be print on the window.</br>
+The domain <code>posx</code> and <code>posy</code> define the starting position of the textbox.</br>
+The domain <code>height</code> and <code>wight</code> define the size if the textbox.</br>
+The domain <code>color</code> contain the color of the textbox.</br>
+The domain <code>text</code> contain the initial string print in the textbox</br></br>
+Each textbox must have is own setup.</br>
+If there is two different setup for the same textbox, the program will use only the first one.</br>
+To use the textbox, you just have to click on it.</br>
+Only the alphabetical character, the space and delete can be use in textbox.</br>
+The other character will have no effect.</br>
+</br></p>
+<hr />
+<h2 id="checkbox-setup"></br></br><U><font color="#A0522D">Checkbox setup</font color="#A0522D"></U></h2>
+<p></br></br>
+Each checkbox must be define as below :
+</br></br>
+Example :</p>
+<pre><code class="ini">[checkbox1]
+name=&quot;checkbox1&quot;
+posx=700
+posy=70
+height=50
+width=50
+fct_to_call_check=&quot;check&quot;
+fct_to_call_not_check=&quot;not_check&quot;
+
+</code></pre>
+
+<p></br>
+The domain <code>[checkbox1]</code> contain the name of the Checkbox, surrounded by [ ].</br>
+The domain <code>name</code> contain the name of the checkbox. The name will not be print on the window.</br>
+The domain <code>posx</code> and <code>posy</code> define the starting position of the checkbox.</br>
+The domain <code>height</code> and <code>wight</code> define the size if the checkbox.</br>
+The domain <code>fct_to_call_check</code> contain the name of the function to call when the checkbox is check.</br>
+The domain <code>fct_to_call_not_check</code> contain the name of the function to call when the checkbox is uncheck.</br>
+</br>
+Each checkbox must have is own setup.</br>
+If there is two different setup for the same checkbox, the program will use only the first one.</br>
+</br></p>
+<hr />
+<h2 id="picbox-setup"></br></br><U><font color="#A0522D">picbox setup</font color="#A0522D"></U></h2>
+<p></br></br>
+picbox mean picture box.</br>
+Each picbox but be define as below.</br>
+</br></br>
+Exemple :</p>
+<pre><code class="ini">[picbox1]
+name=&quot;emoji6.png&quot;
+posx=100
+posy=250
+</code></pre>
+
+<p></br>
+The domain <code>[picbox1]</code> contain the name of the picbox, surrounded by [ ].</br>
+The domain <code>name</code> contain the link of the picture.</br>
+The demain <code>posx</code> and <code>posy</code> contain the starting position of the pixture.</br>
+</br>
+Each picbox must have is own setup.</br>
+If there is two different setup for the same checkbox, the program will use only the first one.</br>
+The picture will be print from the starting position to the end.</br>
+If the end of the picture is out of the window, an arror will be print.</br>
+Name must contain the link to the picture, or the function will retrun an error.</br>
+If the pitecute not exist, or the link is false, the function will retrun an error.</br>
+</br></p>
+<hr />
+<h2 id="help"></br></br><U><font color="#A0522D">Help</font color="#A0522D"></U></h2>
+<p>To try the librairie, u can use <a href="../exemple-ini/"><U><font color="#AFEEEE">this ini file</font color="#AFEEEE"></U></a></br>
+If you need a C program, u can use <a href="../basic-c-program/"><U><font color="#AFEEEE">mine</font color="#AFEEEE"></U></a></br></br></br></p>
+<hr />
+<h2 id="function-in-the-library"></br></br><U><font color="#A0522D">function in the library</font color="#A0522D"></U></h2>
+<p>All the function implement in the library are <a href="../function-en"><font color="#AFEEEE">here</font color="#AFEEEE"></a></p>
+<p>If you are looking for a specific function, u can click on the following link :
+</br>
+</br>
+1. <a href="../function-en/#tekgui_load"><U><font color="#AFEEEE">tekgui_load</font color="#AFEEEE"></U></a></br>
+2. <a href="../function-en/#tekgui_display"><U><font color="#AFEEEE">tekgui_display</font color="#AFEEEE"></U></a></br>
+3. <a href="../function-en/#display_window"><U><font color="#AFEEEE">display_window</font color="#AFEEEE"></u></a></br>
+4. <a href="../function-en/#tekpixel"><U><font color="#AFEEEE">tekpixel</font color="#AFEEEE"></U></a></br>
+5. <a href="../function-en/#tekfunction"><U><font color="#AFEEEE">tekfunction</font color="#AFEEEE"></U></a></br>
+6. <a href="../function-en/#tektext"><U><font color="#AFEEEE">tektext</font color="#AFEEEE"></U></a></br>
+7. <a href="../function-en/#tekgetpixel"><U><font color="#AFEEEE">tekgetpixel</font color="#AFEEEE"></U></a></br>
+8. <a href="../function-en/#tekgui_stop"><U><font color="#AFEEEE">tekgui_stop</font color="#AFEEEE"></U></a></br>
+9. <a href="../fonction-en/#tekgui_max_ram"><U><font color="#AFEEEE">tekgui_max_ram</font color="#AFEEEE"></U></a></br></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -67,3 +67,31 @@ int	main()
   return (0);
 }
 ```
+
+Pour pouvrer le bon fonctionnnement des fonctions, vous devez aussi ajouter ses fonction:</br>
+```
+void	button1()
+{
+  my_putstr("je suis dans button 1\n");
+}
+
+void	button2()
+{
+  my_putstr("je suis dans button 2\n");
+}
+
+void	button3()
+{
+  my_putstr("je suis dans button 3\n");
+}
+
+void	check()
+{
+  my_putstr("Check\n");
+}
+
+void	not_check()
+{
+  my_putstr("uncheck\n");
+}
+```
